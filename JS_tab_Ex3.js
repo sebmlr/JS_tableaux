@@ -1,15 +1,17 @@
-/ constantes /
+//Ecrire un programme qui affiche les valeurs mini et maxi contenues dans un tableau de 10 éléments rempli aléatoirement.
+
+// constantes
 const TAILLETABLEAU = 10;
 const MIN = 1;
 const MAX = 10;
-/ declaration du tableau/
+// declaration du tableau/
 var tableauDemo = new Array();
 var index = 0;
 var valeurRecherchee = 0;
 var posValeurRecherchee;
 var nbFois = 0;
 var valeurTrouvee = false;
-/ remplissage aléatoire du tableau */
+// remplissage aléatoire du tableau 
 for (index = 0; index < TAILLETABLEAU; index++) {
     tableauDemo[index] = Math.floor((Math.random() * MAX) + MIN);
 }
@@ -17,7 +19,7 @@ document.write(" Le contenu du tableau est : ");
 for (index = 0; index < TAILLETABLEAU; index++) {
     document.write(tableauDemo[index] + " ");
 }
-/* Saisie de la valeur à rechercher */
+// Saisie de la valeur à rechercher 
 valeurRecherchee = parseInt(prompt("Quelle valeur recherchez vous ?"));
 // rechercher la valeur dans le tableau 
 for (index = 0; index < TAILLETABLEAU; index++) {
